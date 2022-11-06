@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+  }
+.navbar{
+    width: 98%;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: fixed;
+    justify-content: space-between;
+    font-weight: bolder;
+}
+.logo{
+    height:70%;
+    width: 10%;
+}
+ul li{
+    display: inline-block;
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin-left: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight:bold;
+    padding: 10px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.navbar ul li a:hover{
+    margin-left: 40px;
+    text-decoration:none;
+    transition: 0.1s;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    padding: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.navbar .select{
+    color: aqua;
+}
+.navbar .select:hover{
+    border: none;
+    cursor: pointer;
+}
+

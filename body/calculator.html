@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BOBBUILDER</title>
+	<link rel="stylesheet" type="text/css" href="/Style/calculator.css">
+	<link rel="stylesheet" type="text/css" href="/Style/navbar.css">
+	<link rel="stylesheet" type="text/css" href="/Style/footer.css">
+</head>
+<body>
+	<div class="navbar">
+		<a href="/public/bobbuilder_default.html"><img src="/Images/LOGO.jpg" class="logo" radius="50px"></a>
+			<ul>
+				<li><a class="select">CALCULATOR</a></li>
+				<li><a href="/body/sign_up.html">SIGN UP</a></li>
+				<li><a href="/body/login.html">SIGN IN</a></li>
+				<li><a href="/body/about_us_default.html">ABOUT US</a></li>
+				<li><a href="/body/contact_us_default.html">CONTACT US</a></li>
+			</ul>
+	</div>
+	<div class="main">
+		<div class="content">
+		<form>
+            <label for="area">Enter the area in sq. ft</label><br>
+            <input type="text" id="area">
+            <br>
+            <label for="cement">cement (bags)</label><br>
+            <input type="text" id="cement" value="0" disabled> 
+            <br>
+            <label for="sand">sand (ton)</label><br>
+            <input type="text" id="sand" value="0" disabled> 
+            <br>
+            <label for="aggregate">aggregate (ton)</label><br>
+            <input type="text" id="aggregate" value="0" disabled> 
+            <br>
+            <label for="steel">steel (kg)</label><br>
+            <input type="text" id="steel" value="0" disabled> 
+            <br>
+            <label for="paint">paint (lt)</label><br>
+            <input type="text" id="paint" value="0" disabled> 
+            <br>
+            <label for="bricks">bricks (pcs)</label><br>
+            <input type="text" id="bricks" value="0" disabled> 
+            <br>
+            <label for="flooring">flooring (ft2)</label><br>
+            <input type="text" id="flooring" value="0" disabled> 
+            <br>
+            <label for="total">Total Costing</label><br>
+            <input type="text" id="total" value="0" disabled>
+            <br><br>
+            <input type="button" value="calculate">
+            <input type="button" value="Reset" onclick="reset()"> 
+        </form>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="contain">
+			<div class="list">
+				<ul>
+					<li><a href="/body/calculator.html">CALCULATOR</a></li>
+					<li><a href="/public/bobbuilder_default.html">HOME</a></li>
+					<li><a href="/body/about_us_default.html">ABOUT US</a></li>
+					<li><a href="/body/contact_us_default.html">CONTACT US</a></li>
+					<li><img src="/Images/copyright.jpg"  class="copy" alt="C">copyright</li>
+					<li><img src="/Images/facebook_icon.jpg" class="f_img"></li>
+					<li><img src="/Images/Whatsapp_icon.jpg" class="f_img"></li>
+					<li><img src="/Images/Twitter_icon.jpg" class="f_img"></li>
+					<li><img src="/Images/Instagram_icon.jpg" class="f_img"></li>
+				</ul>
+			</div>
+
+
+		</div>
+	</footer>
+<script src="/scr/calculator.js"></script>
+</body>
+</html>

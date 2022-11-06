@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BOBBUILDER</title>
+    <link rel="stylesheet" type="text/css" href="/Style/login.css">
+    <link rel="stylesheet" type="text/css" href="/Style/navbar.css">
+    <link rel="stylesheet" type="text/css" href="/Style/footer.css">
+
+   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <div class="navbar">
+      <a href="/public/bobbuilder_default.html"><img src="/Images/LOGO.jpg" class="logo" radius="50px"></a>
+        <ul>
+          <li><a href="/body/calculator.html">CALCULATOR</a></li>
+          <li><a href="/body/sign_up.html">SIGN UP</a></li>
+          <li><a class="select">SIGN IN</a></li>
+          <li><a href="/body/about_us_default.html">ABOUT US</a></li>
+          <li><a href="/body/contact_us_default.html">CONTACT US</a></li>
+        </ul>
+    </div>
+    <!-- Navbar ends -->
+    <!-- body -->
+    <div class="bg-img">
+      <div class="content">
+        <header>Login Form</header>
+        <form action="#">
+          <div class="field">
+            <span class="fa fa-user"></span>
+            <input type="text" required placeholder="Email or Phone">
+          </div>
+          <div class="field space">
+            <span class="fa fa-lock"></span>
+            <input type="password" class="pass-key" required placeholder="Password">
+            <span class="show">SHOW</span>
+          </div>
+          <div class="pass">
+            <a href="#">Forgot Password?</a>
+          </div>
+          <div class="field">
+            <input type="submit" value="LOGIN">
+          </div>
+        </form>
+        <div class="login">Or login with</div>
+        <div class="signup">Don't have account?
+          <a href="/body/sign_up.html">Signup Now</a>
+          <br>
+          <a href="/loggedin/bobbuilder.html">.</a>
+        </div>
+      </div>
+    </div>
+    <!-- body end -->
+    <!-- footer start -->
+
+    <footer class="footer">
+      <div class="contain">
+        <div class="list">
+          <ul>
+            <li><a href="/body/calculator.html">CALCULATOR</a></li>
+            <li><a href="/public/bobbuilder_default.html">HOME</a></li>
+            <li><a href="/body/about_us_default.html">ABOUT US</a></li>
+            <li><a href="/body/contact_us_default.html">CONTACT US</a></li>
+            <li><img src="/Images/copyright.jpg"  class="copy" alt="C">copyright</li>
+            <li><img src="/Images/facebook_icon.jpg" class="f_img"></li>
+            <li><img src="/Images/Whatsapp_icon.jpg" class="f_img"></li>
+            <li><img src="/Images/Twitter_icon.jpg" class="f_img"></li>
+            <li><img src="/Images/Instagram_icon.jpg" class="f_img"></li>
+          </ul>
+        </div>
+  
+  
+      </div>
+    </footer>
+
+    <!-- footer end -->
+    <!-- script start -->
+    <script>
+      const pass_field = document.querySelector('.pass-key');
+      const showBtn = document.querySelector('.show');
+      showBtn.addEventListener('click', function(){
+       if(pass_field.type === "password"){
+         pass_field.type = "text";
+         showBtn.textContent = "HIDE";
+         showBtn.style.color = "#3498db";
+       }else{
+         pass_field.type = "password";
+         showBtn.textContent = "SHOW";
+         showBtn.style.color = "#222";
+       }
+      });
+    </script>
+    <!-- script end -->
+
+  </body>
+</html>

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+body{
+  font-size: large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  color: #fff;
+  background-color: rgb(26, 26, 26);
+}
+.bg-img{  
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+}
+.bg-img:after{
+  position:relative;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  padding: 60px 32px;
+  width: 80%;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+  justify-content: space-between;
+}
+.content header{
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Montserrat',sans-serif;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+}
+.con{
+    display: flex;
+}
+.info{
+    width: 70%;
+}
+.img{
+    width: 30%;
+}
+.img a{
+    text-decoration: none;
+    color: #fff;
+    font-size: large;
+    font-weight: bolder;
+    border: #fff solid;
+    padding: 5px;
+
+}
+.img a:hover{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: bolder;
+    border: #fff solid;
+    background-color: #fff;
+    padding: 5px;
+
+}
+

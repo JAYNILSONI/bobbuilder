@@ -1,0 +1,56 @@
+body{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    
+}
+.main{
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)) ,url('/Images/Build_3.jpg');
+    height: 195vh;
+    background-size: cover;
+    background-position: center;
+  }
+  .main:after{
+    position:relative;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+  }
+  .container{
+    color: black;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    text-align: center;
+    padding: 60px 32px;
+    width: 1000px;
+    transform: translate(-50%,-50%);
+    background: rgba(255, 255, 255, 0.742);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+  }
+.pro1{
+  margin-bottom: 50px;
+}
+.con{
+  display: flex;
+}
+.con .img{
+  width: 20%;
+  margin-right: 20px;
+}
+.con .img .company_img_1{
+  width: 150px;
+}
+.con .address{
+  width: 80%;
+}
+h3{
+  text-transform: uppercase;
+}
+
+
+ 
